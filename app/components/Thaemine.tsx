@@ -23,12 +23,10 @@ function Thaemine() {
     const [player8WipeCount, setPlayer8WipeCount] = useState(0);
 
     return (
-        <div className="tally-container">
-            <h1>Thaemine Tally Board</h1>
-            <div className='totals'>
-                
-            </div>
-            <div className='board'>
+        <div className='w-full h-full flex flex-col items-center'>
+            <h1 className='mt-10 pb-10 text-2xl font-bold'>Thaemine Tally Board</h1>
+
+            <div className='w-full h-full flex flex-col items-center'>
                 <TallyComponent name={'DJ'} deathCount={player1DeathCount} wipeCount={player1WipeCount} deathCounterIncrement={()=>setPlayer1DeathCount(player1DeathCount+1)} deathCounterDecrement={() => setPlayer1DeathCount(player1DeathCount-1)} wipeCounterIncrement={() => setPlayer1WipeCount(player1WipeCount+1)} wipeCounterDecrement={() => setPlayer1WipeCount(player1WipeCount-1)}/>
                 <TallyComponent name={'Hefty'} deathCount={player2DeathCount} wipeCount={player2WipeCount} deathCounterIncrement={()=>setPlayer2DeathCount(player2DeathCount+1)} deathCounterDecrement={() => setPlayer2DeathCount(player2DeathCount-1)} wipeCounterIncrement={() => setPlayer2WipeCount(player2WipeCount+1)} wipeCounterDecrement={() => setPlayer2WipeCount(player2WipeCount-1)}/>
                 <TallyComponent name={'Grog'} deathCount={player3DeathCount} wipeCount={player3WipeCount} deathCounterIncrement={()=>setPlayer3DeathCount(player3DeathCount+1)} deathCounterDecrement={() => setPlayer3DeathCount(player3DeathCount-1)} wipeCounterIncrement={() => setPlayer3WipeCount(player3WipeCount+1)} wipeCounterDecrement={() => setPlayer3WipeCount(player3WipeCount-1)}/>
