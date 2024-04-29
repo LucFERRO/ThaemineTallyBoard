@@ -25,3 +25,69 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(104, 104, 190);
+}
+
+.tally-container {
+  width: 95%;
+  height: 95%;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.tally-container h1 {
+  padding-bottom: 20px;
+}
+
+.tally-container > .board {
+  width: 90%;
+  height: 90%;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.tally-component {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 10px 5px;
+}
+
+.tally-component .name {
+  width: 80px;
+  font-size: large;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+
+}
+
+.counter-container .button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.counter-container .button-container button {
+  width: 40px;
+  height: 30px;
+  border: 2px solid blue
+}
